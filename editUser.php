@@ -1,7 +1,7 @@
 <?PHP
 include("db_connect.php");
-$first=$_GET['first'];
-$last=$_GET['last'];
+$first=addslashes($_GET['first']);
+$last=addslashes($_GET['last']);
 $email=$_GET['email'];
 $admin=$_GET['admin'];
 $id=$_GET['id'];

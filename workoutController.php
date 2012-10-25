@@ -4,7 +4,7 @@ session_start();
 
 include "db_connect.php";
 $email= $_SESSION['email'];
-$title = $_POST['title'];
+$title = addslashes($_POST['title']);
 $type= $_POST['type'];
 $workout= $_POST['workout'];
 
